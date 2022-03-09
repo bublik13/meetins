@@ -1,3 +1,8 @@
+//container
+$container-max-width: 320px;
+$container-min-width: 1440px;
+
+
 //bacgrounds
 $body-bg: #ff55;
 $notify-bg: #ffffff;
@@ -20,3 +25,8 @@ $button-color-grey: #707070;
 $notify-box-shadow: rgba(81, 81, 81, 0.15);
 //border
 $list-border: #eaeaea;
+//media
+$xs: 350px;
+$sm: 556px;
+$md: 768px;
+$lg: 1200px;

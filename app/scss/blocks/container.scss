@@ -1,0 +1,12 @@
+.container {
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  @include media($xs) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

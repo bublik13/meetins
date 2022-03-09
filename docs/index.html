@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:ital,wght@0,600;1,400&family=Inter:wght@600&family=Nunito:wght@300;400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1646488459848">
+    <link rel="stylesheet" href="css/main.css?t=1646833454834">
 </head>
 
 <body>
-<picture><source srcset="img/desktop.avif" type="image/avif"><source srcset="img/desktop.webp" type="image/webp"><img class="pp"    src="img/desktop.jpg" alt=""></picture>
+<picture><source srcset="img/desktop.avif" type="image/avif"><source srcset="img/desktop.webp" type="image/webp"><img class="pp"    src="img/desktop.png" alt=""></picture>
     <style>
       .pp {
         position: absolute;
@@ -29,94 +29,46 @@
          <path d="M13.4069 1.77106C15.0072 -0.180516 17.9928 -0.180514 19.5931 1.77106L31.6402 16.4627C33.7812 19.0737 31.9237 22.999 28.5471 22.999H4.45285C1.07631 22.999 -0.781213 19.0737 1.35978 16.4627L13.4069 1.77106Z" fill="currentColor"></path>
        </symbol>
     </svg>
-    <div class="notify">
-        <div class="notify__container">
-            <svg aria-hidden="true" class="notify__icon">
-                <use xlink:href="#arrow"/>
-            </svg>
-            <h1 class="notify__title title">Уведомления</h1>
-            <ul class="notify__list list">
-                <li class="notify__item">
-                    <a href="#" class="notify__card card">
-                        <div class="card__wrap">
-                            <span class="card__online"></span>
-                            <div class="card__wrap-img">
-                                <img src="#" alt="foto" class="card__img" height="60px" width="60px">
-                            </div>
-                        </div>
-                        <div class="card__wrap-desc">
-                            <div class="card__name">Имя</div>
-                            <div class="card__event">приглашает на <span class="card__color">«Событие»</span> </div>
-                        </div>
-                        <div class="card__date">дата</div>
-                    </a>
-                </li>
-                <li class="notify__item">
-                    <a href="#" class="notify__card card">
-                        <div class="card__wrap">
-                            <div class="card__wrap-img">
-                                <img src="#" alt="foto" class="card__img" height="60px" width="60px">
-                            </div>
-                        </div>
-                        <div class="card__wrap-desc">
-                            <div class="card__name">Имя</div>
-                            <div class="card__event">приглашает на <span class="card__color">«Событие»</span> </div>
-                        </div>
-                        <div class="card__date">дата</div>
-                    </a>
-                </li>
-                <li class="notify__item">
-                    <a href="#" class="notify__card card">
-                        <div class="card__wrap">
-                            <div class="card__wrap-img">
-                                <img src="#" alt="foto" class="card__img" height="60px" width="60px">
-                            </div>
-                        </div>
-                        <div class="card__wrap-desc">
-                            <div class="card__name">Имя</div>
-                            <div class="card__event">приглашает на <span class="card__color">«Событие»</span> </div>
-                        </div>
-                        <div class="card__date">дата</div>
-                    </a>
-                </li>
-                <li class="notify__item">
-                    <a href="#" class="notify__card card">
-                        <div class="card__wrap">
-                            <div class="card__wrap-img">
-                                <img src="#" alt="foto" class="card__img" height="60px" width="60px">
-                            </div>
-                        </div>
-                        <div class="card__wrap-desc">
-                            <div class="card__name">Имя</div>
-                            <div class="card__event">приглашает на <span class="card__color">«Событие»</span> </div>
-                        </div>
-                        <div class="card__date">дата</div>
-                    </a>
-                </li>
-                <li class="notify__item">
-                    <a href="#" class="notify__card card">
-                        <div class="card__wrap">
-                            <div class="card__wrap-img">
-                                <img src="#" alt="foto" class="card__img" height="60px" width="60px">
-                            </div>
-                        </div>
-                        <div class="card__wrap-desc">
-                            <div class="card__name">Имя</div>
-                            <div class="card__event">приглашает на <span class="card__color">«Событие»</span> </div>
-                        </div>
-                        <div class="card__date">дата</div>
-                    </a>
-                </li>
-            </ul> 
-            <button class="notify__button button">
-                Все уведомления
-            </button>
+    <div class="header">
+        <div class="header__top">
+            <div class="header__container container">
+                <a class="header__logo logo" href="#">
+                    <img src="img/header/logo.svg" class="logo__img"  alt="logo">
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Знакомства</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">События</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Возможности</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__enter">Войти</a>
+                <a href="#" class="header__install">Установить</a>
+            </div>
+        </div>
+        <div class="header__center">
+            <div class="header__container-center container">
+                <h1 class="header__title title">
+                    Знакомства стали 
+                    проще
+                </h1>
+                <p class="header__subtitle subtitle">
+                    Люди, события, встречи
+                </p>
+                <span class="header__circl circl circl--yellow"></span>
+                <span class="header__circl-purpure circl circl--purpure"></span>
+            </div>
         </div>
     </div>
 
-
     <!-- подключаем js -->
-    <script src="js/main.js?t=1646488459848"></script>
+    <script src="js/main.js?t=1646833454834"></script>
 </body>
 
 </html>
