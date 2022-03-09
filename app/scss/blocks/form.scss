@@ -1,0 +1,62 @@
+.form {
+}
+.form__input {
+  padding: 15px 34px 15px 20px;
+  border: 2px solid #d4e8fc;
+  border-radius: 33px 0 0 33px;
+  width: 275px;
+  @include font(16px, 26px, 400, $second-family);
+  color: #707070;
+}
+.form__btn {
+  margin-left: -28px;
+  width: 180px;
+}
+.form__input--transparent::-webkit-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent:-moz-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::-moz-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input:-ms-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::-ms-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::-webkit-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent:-moz-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::-moz-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent:-ms-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::-ms-input-placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}
+.form__input--transparent::placeholder {
+    @include font(16px, 26px, 400, $second-family);
+    color: #707070;
+}

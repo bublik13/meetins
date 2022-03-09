@@ -1,0 +1,14 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  color: #707070;
+  @include font(19px, 26px, 800, $second-family);
+  transition: opacity 0.2s;
+  z-index: 1;
+  padding: 17px 20px;
+  background-color: #ffe55c;
+  box-shadow: 0px 6px 14px rgba(255, 229, 92, 0.56);
+  border-radius: 31px;
+  border: none;
+}

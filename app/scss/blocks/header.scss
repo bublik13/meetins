@@ -54,8 +54,6 @@
   z-index: 0;
 }
 .header__title {
-  @include font(64px, 59px, 900, $second-family);
-  color: #ffffff;
   max-width: 601px;
   margin-bottom: 32px;
 }
