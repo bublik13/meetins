@@ -1,0 +1,46 @@
+.box {
+  display: flex;
+  gap: 20px;
+  width: 600px;
+  overflow: hidden;
+}
+.box__item {
+  height: 500px;
+  width: 100%;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+  transform: translateX(calc((-100% - 20px) * var(--step)));
+}
+.box__item--height {
+  height: 600px;
+}
+.box__title {
+  max-width: 296px;
+  margin-bottom: 20px;
+}
+.box__title--width {
+  min-width: 515px;
+  margin-bottom: 0;
+}
+.box__subtitle {
+  @include font(24px, 25px, 600, $second-family);
+  color: #707070;
+  margin-bottom: 35px;
+}
+.box__form {
+  margin-bottom: 19px;
+}
+.box__link-account {
+  text-align: center;
+  text-decoration: none;
+  @include font(18px, 20px, 600, $second-family);
+  color: #707070;
+}
+.box__link-password {
+  text-align: start;
+  text-decoration: none;
+  @include font(13px, 14px, 400, $second-family);
+  color: #707070;
+  margin-left: 13px;
+  padding: 10px;
+}

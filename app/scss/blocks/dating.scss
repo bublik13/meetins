@@ -1,35 +1,31 @@
 .dating {
+  background-color: #F9FBFC;
 }
 .dating__container {
-  padding-top: 297px;
+  padding-top: 90px;
   position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 117px;
 }
-.dating__container::after {
-  position: absolute;
-  content: " ";
-  background: url(../img/dating/arrow.svg);
-  left: 30%;
-  bottom: 100px;
-  width: 113px;
-  height: 57px;
-  z-index: 1;
-}
+// .dating__container::after {
+//   position: absolute;
+//   content: " ";
+//   background: url(../img/dating/arrow.svg);
+//   left: 30%;
+//   bottom: 100px;
+//   width: 113px;
+//   height: 57px;
+//   z-index: 1;
+// }
 .dating__title {
   position: absolute;
-  top: 50px;
+  bottom: 50px;
   left: 0;
 }
 .dating__wrap {
   position: relative;
-  padding: 15px 20px;
-}
-.dating__circl {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-top: 5px;
 }
 .dating__title-circl {
   position: relative;
@@ -39,30 +35,7 @@
 .dating__subtitle {
   max-width: 465px;
 }
-.dating__wrap-form {
+.dating__subtitle {
+  margin-bottom: 13px;
 }
-.dating__title-form {
-  max-width: 465px;
-  margin-bottom: 30px;
-}
-.dating__form {
-  margin-bottom: 10px;
-}
-.dating__socials {
-  display: flex;
-  align-items: center;
-}
-.dating__text {
-  @include font(13px, 18px, 400, $second-family);
-  color: #707070;
-  margin-right: 10px;
-  margin-left: 20px;
-}
-.dating__link {
-  opacity: 0.3;
-}
-.dating__link:not(:last-child) {
-  margin-right: 10px;
-}
-.dating__icon {
-}
+

@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+.social__text {
+  @include font(13px, 18px, 400, $second-family);
+  color: #707070;
+  margin-right: 10px;
+}
+.social__link {
+  opacity: 0.3;
+}
+.social__link:not(:last-child) {
+  margin-right: 10px;
+}

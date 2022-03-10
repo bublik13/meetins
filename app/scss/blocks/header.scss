@@ -1,10 +1,12 @@
 .header {
-  background: #F9FBFC;
+  background: #f9fbfc;
+  position: relative;
 }
 .header__top {
   padding-top: 36px;
-  padding-bottom: 36px;
-  position: relative;
+  padding-left: 133px;
+  padding-right: 228px;
+  margin-bottom: 10px;
 }
 .header__top::after {
   position: absolute;
@@ -14,7 +16,7 @@
   left: 0;
   bottom: 0;
   background: url(../img/header/white-bg.svg) center center/ contain no-repeat;
-  height: 150px;
+  height: 139px;
   width: 1440px;
   z-index: 1;
   margin: 0 auto;
@@ -26,32 +28,43 @@
   z-index: 2;
 }
 .header__logo {
-  margin-right: 65px;
+  margin-right: 46px;
 }
 .header__nav {
   margin-right: auto;
 }
 .header__enter {
-  @include font(24px, 32px, 700, $second-family);
-  color: #51a2f2;
+  @include font(24px, 30px, 700, $second-family);
+  color: #515151;
   display: block;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 31px;
 }
 .header__install {
-  @include font(24px, 32px, 700, $second-family);
+  @include font(24px, 30px, 700, $second-family);
   color: #51a2f2;
   display: block;
   text-decoration: none;
 }
 .header__center {
+  position: relative;
+}
+.header__center::after {
+  content: " ";
+  position: absolute;
+  background: url(../img/header/bg.jpg) top center/contain no-repeat;
+  top: -111px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
 }
 .header__container-center {
-  padding-top: 211px;
-  padding-bottom: 281px;
+  padding-top: 200px;
+  padding-bottom: 197px;
   position: relative;
-  background: url(../img/header/bg.jpg) center center/ cover no-repeat;
-  z-index: 0;
+  z-index: 1;
 }
 .header__title {
   max-width: 601px;
@@ -60,13 +73,5 @@
 .header__subtitle {
   @include font(36px, 33px, 400, $second-family);
   color: #ffffff;
-  margin-bottom: 39px;
 }
-.header__circl {
 
-}
-.header__circl-purpure{
-  position: absolute;
-  bottom: 60px;
-  right: 40px;
-}
