@@ -4,7 +4,6 @@
 .form--column {
   display: flex;
   flex-direction: column;
-  width: 85%;
 }
 .form__fieldset {
   display: flex;
@@ -180,5 +179,5 @@
   margin-bottom: 35px;
 }
 .form__btn-file {
-  max-width: 480px;
+  width: 100%;
 }
