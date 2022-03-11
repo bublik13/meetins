@@ -138,3 +138,4 @@ exports.build = series(clear, scss, js, img, sprite, fonts, html);
 exports.watch = series(clear, scss, js, img, svg, sprite, fonts, html, serve);
 exports.bem = bem;
 exports.clear = clear;
+exports.img = img;

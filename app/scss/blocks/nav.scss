@@ -1,0 +1,15 @@
+.nav {
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav__item {
+}
+.nav__link {
+  text-decoration: none;
+  padding: 20px 20px 20px 15px;
+  @include font(18px, 30px, 700, $second-family);
+  color: #515151;
+}

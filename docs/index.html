@@ -4,42 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1643145308259">
+    <title>Meetins</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:ital,wght@0,600;1,400&family=Inter:wght@600&family=Nunito:wght@300;400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="slick/slick.css?t=1646999347588"/>
+    <link rel="stylesheet" href="css/main.css?t=1646999347588">
 </head>
 
 <body>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clock"></use>
+<picture><source srcset="img/main1.avif" type="image/avif"><source srcset="img/main1.webp" type="image/webp"><img class="pp"  hidden  src="img/main1.jpg" alt=""></picture>
+    <style>
+      .pp {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style>
+    <svg display="none">
+        <symbol id="arrow" viewBox="0 0 33 23">
+         <path d="M13.4069 1.77106C15.0072 -0.180516 17.9928 -0.180514 19.5931 1.77106L31.6402 16.4627C33.7812 19.0737 31.9237 22.999 28.5471 22.999H4.45285C1.07631 22.999 -0.781213 19.0737 1.35978 16.4627L13.4069 1.77106Z" fill="currentColor"></path>
+       </symbol>
     </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-    </svg>
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
-        <!-- подключаем шапку -->
-        <header>
-    Шапка сайта
-</header>
-
-        <div class="test__content">
-<picture><source srcset="img/mentor.avif" type="image/avif"><source srcset="img/mentor.webp" type="image/webp"><img class="test__img" src="img/mentor.jpg" alt="mentor picture"></picture>
-            <div class="test__pic"></div>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container">
+                <a class="header__logo logo" href="#">
+                    <img src="img/header/logo.svg" class="logo__img"  alt="logo">
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Знакомства</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">События</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Возможности</a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header__enter">Войти</a>
+                <a href="#" class="header__install">Установить</a>
+            </div>
         </div>
-
-        <!-- подключаем подвал -->
-        <footer>
-    Подвал сайта
-</footer>
-
+        <div class="header__center">
+            <div class="header__container-center container">
+                <h1 class="header__title title">
+                    Знакомства стали 
+                    проще
+                </h1>
+                <p class="header__subtitle subtitle">
+                    Люди, события, встречи
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="dating">
+        <div class="dating__container container">
+            <h2 class="dating__title title title--big">ЗНАКОМСТВА</h2>
+            <div class="dating__wrap">
+                <h3 class="dating__title-circl title title--blue-xs">Реальные встречи</h3>
+                <p class="dating__subtitle subtitle subtitle--grey">Устал свайпить? Тогда Метинс точно для тебя. Мы придумали как знакомиться интересно и эффективно.
+                </p>
+                <p class="dating__subtitle-two subtitle subtitle--grey">
+                 Попробуй!
+                </p>
+            </div>
+            <div style="--step: 0" class="dating__box box js-box single-item">
+                <div class="box__item js-box-item">
+                    <h4 class="box__title title title--blue">Войдите, чтобы
+                        попробовать
+                    </h4>
+                    <form action="send.php" method="post" class="box__form form">
+                        <input type="text" name="email" required="Введите ваш e-mail адрес" placeholder="Введите ваш e-mail адрес" class="form__input">
+                        <button type="submit" class="form__btn btn btn--brand js-btn" > Далее </button>
+                    </form>
+                    <div class="box__social social">
+                        <div class="social__text">Войти с помощь:</div>
+                        <a href="#" class="social__link">
+                            <img src="img/dating/vk.svg" alt="vk" class="social__icon">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="img/dating/google.svg" alt="google" class="social__icon">
+                        </a>
+                        <a href="#" class="social__link">
+                            <img src="img/dating/telegram.svg" alt="telegram" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="box__item ">
+                    <h4 class="box__title title title--blue">Вход в аккаунт 
+                        Метинс
+                    </h4>
+                    <button class="box__btn btn btn--transporant">
+                        <img class="btn__arrow" src="img/box/arrow.svg" alt="arrow">
+                        <div class="btn__text">Назад</div>
+                    </button>
+                    <form action="send.php" method="post" class="box__form form form--bottom">
+                        <input type="password" name="password" required placeholder="Введите пароль" class="form__input">
+                        <button type="submit" class="form__btn btn btn--brand"> Далее </button>
+                    </form>
+                    <a href="#" class="box__link-password">Забыли пароль?</a>
+                </div>
+                <div class="box__item">
+                    <h4 class="box__title title title--blue box__title--width">Создание профиля
+                    </h4>
+                    <div class="box__subtitle">Пройдите быструю регистрацию
+                    </div>
+                    <form action="send.php" method="post" class="box__form form form--column">
+                        <fieldset class="form__fieldset">
+                            <div class="form__title">Я</div>
+                            <div class="form__wrap-flex">
+                                <label class="form__label">
+                                    <input name="radio" type="radio"  checked="checked" value="1" class="form__check check">
+                                    <span class="form__check-pseudo check-pseudo check-pseudo--radius"> 
+                                        <img class="form__icon" src="img/form/man.svg" alt="man">
+                                        <span class="form__text">Мужчина</span>
+                                    </span>
+                                </label>
+                                <label class="form__label">
+                                    <input name="radio" type="radio" class="form__check check">
+                                    <span class="form__check-pseudo check-pseudo check-pseudo--radius">
+                                        <img class="form__icon" src="img/form/woman.svg" alt="woman">
+                                        <span class="form__text">Женщина</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form__fieldset">
+                            <div class="form__title">Меня зовут</div>
+                            <input type="text" name="text" required placeholder="Как вас зовут?" class="form__input form__input--width">
+                        </fieldset>
+                        <div class="form__wrap-select">
+                            <div class="form__title">Родился</div>
+                            <div class="form__select-flex">
+                                <select class="form__select">
+                                    <option>День</option>
+                                    <option>Пункт 2</option>
+                                    <option>Пункт 2</option>
+                                </select>
+                                <select class="form__select">
+                                    <option>Месяц</option>
+                                    <option>Пункт 2</option>
+                                    <option>Пункт 2</option>
+                                </select>
+                                <select class="form__select">
+                                    <option>Год</option>
+                                    <option>Пункт 2</option>
+                                    <option>Пункт 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__btn-big btn btn--brand"> Продолжить </button>
+                        <a href="#" class="box__link-account">У меня уже есть аккаунт</a>
+                    </form>
+                    
+                </div>
+                <div class="box__item box__item--height">
+                    <h4 class="box__title title title--blue box__title--width">Создание профиля
+                    </h4>
+                    <div class="box__subtitle">это последний шаг!
+                    </div>
+                    <form action="send.php" method="post" class="box__form form">
+                        <div class="form__wrap-file">
+                            <div class="form__group">
+                                <input type="file" name="file" id="file" class="form__file">
+                                <label for="file" class="form__file-btn btn btn-tertiary js-labelFile">
+                                    <div class="btn__wrap">
+                                        <img class="btn__arrowup" src="img/form/arrowup.svg" alt="arrowup">
+                                        <div class="btn__text-up js-fileName">Выбрать</div>
+                                    </div>
+                                    <div class="btn__subtitle js-fileName">jpg, png не более <br> 10мб</div>
+                                </label>
+                            </div>
+                            <div class="form__wrap-text">
+                                <div class="form__title-file">Загрузите фотографию профиля</div>
+                                <div class="form__subtitle-file">условие 1</div>
+                                <div class="form__subtitle-file">условие 1</div>
+                                <div class="form__subtitle-file">условие 1</div>
+                            </div>
+                        </div>
+                        <div class="form__wrap-marker">
+                            <input type="text" name="text" required placeholder="Укажите свое местоположение" class="form__input form__input--marker">
+                            <img class="form__marker" src="img/form/marker.svg" alt="marker">
+                        </div>
+                        <input type="password" name="password" required placeholder="Создайте пароль" class="form__input form__input--password-new">
+                        <div class="form__symbol">не менее 8 символов и спец. знаки</div>
+                        <button type="submit"  class="form__btn-file btn btn--brand"> Завершить и войти в Метинс </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="dating__bottom">
+            <div class="dating__container-bottom container">
+                <div class="dating__wrap dating__wrap--height">
+                    <h5 class="dating__title-circl title title--blue-xs">Знакомства в событиях</h5>
+                    <p class="dating__subtitle subtitle subtitle--grey">Посещайте события своего города вместе с другими людьми. 
+                    </p>
+                    <p class="dating__subtitle-two subtitle subtitle--grey">
+                        Знакомься с людьми – повсюду!
+                    </p>
+                </div>
+                <div class="dating__wrap-img">
+<picture><source srcset="img/dating/people.avif" type="image/avif"><source srcset="img/dating/people.webp" type="image/webp"><img class="dating__img" src="img/dating/people.jpg" alt=""></picture>
+                </div>
+            </div>
+        </div>
     </div>
 
-
     <!-- подключаем js -->
-    <script src="js/main.js?t=1643145308259"></script>
+    <script src="js/main.js?t=1646999347588"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script  type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script>
+        (function() {
+    $('.form__file"').each(function() {
+        let $input = $(this),
+            $label = $input.next('.js-labelFile'),
+            labelVal = $label.html();
+        
+        $input.on('change', function(element) {
+        let fileName = '';
+        if (element.target.value) fileName = element.target.value.split('\\').pop();
+        fileName ? $label.addClass('has-file').find('.js-fileName').html(fileName) : $label.removeClass('has-file').html(labelVal);
+        });
+    });
+    
+    })();
+    </script>
+
+<script>
+   $('.single-item').slick();
+</script>
+
+
 </body>
 
 </html>

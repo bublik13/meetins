@@ -1,0 +1,8 @@
+.subtitle {
+  @include font(36px, 33px, 400, $second-family);
+  color: #fafafa;
+}
+.subtitle--grey {
+  @include font(24px, 33px, 400, $second-family);
+  color: #707070;
+}

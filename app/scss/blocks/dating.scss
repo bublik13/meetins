@@ -1,0 +1,53 @@
+.dating {
+  background-color: #f9fbfc;
+  position: relative;
+}
+.dating__container {
+  padding-top: 90px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 117px;
+}
+.dating__title {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+.dating__wrap {
+  position: relative;
+  padding-top: 5px;
+  height: 244px;
+}
+.dating__wrap--height {
+  padding-top: 48px;
+  padding-bottom: 31px;
+}
+.dating__title-circl {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 9px;
+}
+.dating__subtitle {
+  max-width: 465px;
+}
+.dating__subtitle {
+  margin-bottom: 13px;
+}
+.dating__bottom {
+  background: rgba(81, 162, 242, 0.1);
+}
+.dating__container-bottom {
+  display: flex;
+}
+.dating__wrap-img {
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+.dating__img {
+  display: block;
+  width: 100%;
+  height: 365px;
+  border-radius: 36px 0px 0px 36px;
+}

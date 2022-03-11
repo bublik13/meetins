@@ -1,0 +1,183 @@
+.form--bottom {
+  margin-bottom: 0;
+}
+.form--column {
+  display: flex;
+  flex-direction: column;
+}
+.form__fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  margin-bottom: 20px;
+}
+.form__wrap-file {
+  display: flex;
+}
+.form__wrap-marker {
+  position: relative;
+}
+.form__title {
+  @include font(18px, 20px, 600, $second-family);
+  color: #707070;
+}
+.form__input {
+  padding: 15px 34px 18px 20px;
+  border: 2px solid #d4e8fc;
+  border-radius: 33px 0 0 33px;
+  width: 303px;
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+  background-color: #f9fbfc;
+}
+.form__input--width {
+  width: 384px;
+  border-radius: 33px;
+}
+.form__input--marker {
+  width: 477px;
+  border-radius: 33px;
+  padding: 18px 40px 18px 20px;
+  margin-bottom: 25px;
+}
+.form__input--password-new {
+  width: 477px;
+  border-radius: 33px;
+  margin-bottom: 10px;
+}
+.form__marker {
+  position: absolute;
+  top: 20px;
+  right: 11px;
+}
+.form__btn {
+  margin-left: -28px;
+  width: 180px;
+}
+.form__input::-webkit-input-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input:-moz-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::-moz-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input:-ms-input-placeholder {
+  @include font(16px, 26px, 400, $second-family);
+  color: #707070;
+}
+.form__input::-ms-input-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::-webkit-input-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input:-moz-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::-moz-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input:-ms-input-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::-ms-input-placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__input::placeholder {
+  @include font(16px, 26px, 600, $second-family);
+  color: #707070;
+}
+.form__wrap-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__label:first-child {
+  margin-right: 20px;
+}
+.form__icon {
+  margin-right: 10px;
+}
+.form__text {
+  @include font(16px, 28px, 600, $second-family);
+  color: #707070;
+}
+.form__wrap-select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 35px;
+}
+.form__select {
+  padding: 20px 10px;
+  border-radius: 32px;
+  border: none;
+  background-color: #f9fbfc;
+  border: 2px solid #d4e8fc;
+  @include font(16px, 28px, 600, $second-family);
+  color: #707070;
+}
+.form__select-flex {
+  margin-left: 56px;
+}
+.form__btn-big {
+  margin-bottom: 25px;
+}
+.form__group {
+  margin-bottom: 25px;
+}
+.form__wrap-text {
+  padding-top: 20px;
+  padding-left: 25px;
+}
+.form__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.form__file-btn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 58px 39px;
+  cursor: pointer;
+}
+.form__title-file {
+  margin-bottom: 17px;
+  @include font(16px, 21px, 600, $second-family);
+  color: #707070;
+}
+.form__subtitle-file {
+  @include font(13px, 17px, 400, $second-family);
+  color: #707070;
+  padding: 2px;
+}
+.form__symbol {
+  @include font(13px, 17px, 400, $second-family);
+  color: #707070;
+  padding: 2px;
+  margin-left: 22px;
+  margin-bottom: 35px;
+}
+.form__btn-file {
+  width: 100%;
+}
