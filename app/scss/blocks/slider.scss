@@ -42,9 +42,6 @@
   max-width: 800px;
   height: 400px;
   flex-direction: column;
-  // flex-shrink: 1;
-  // min-width: 0;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -65,7 +62,6 @@
   transition-property: transform;
   align-items: center;
 }
-/* custmm bullets style */
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -122,10 +118,10 @@
   border: 2.5px solid #51a2f2;
   border-radius: 50%;
 }
-.slider__btn{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50px);
-    padding: 20px 30px;
+.slider__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50px);
+  padding: 20px 30px;
 }
