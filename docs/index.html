@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css?t=1646999347588"/>
-    <link rel="stylesheet" href="css/main.css?t=1646999347588">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css?t=1647025921211"/>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css?t=1647025921211">
 </head>
 
 <body>
@@ -220,14 +221,46 @@
             </div>
         </div>
     </div>
+    <div class="slider">
+        <div class="slider__container container">
+            <h6 class="slider__title title title--big">СОБЫТИЕ</h6>
+            <h7 class="slider__title-blue title title--blue box__title--width">Много ярких событий в твоем городе</h7>
+            <div class="slider__swiper swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+<picture><source srcset="img/slider/theatre.avif" type="image/avif"><source srcset="img/slider/theatre.webp" type="image/webp"><img class="swiper-slide__img" src="img/slider/theatre.jpg" alt="theatre"></picture>
+                     <p class="swiper-slide__text">  Театральные представления — лучший способ получить удивительные эмоции </p>
+                    </div>
+                  <div class="swiper-slide">
+<picture><source srcset="img/slider/museum.avif" type="image/avif"><source srcset="img/slider/museum.webp" type="image/webp"><img class="swiper-slide__img" src="img/slider/museum.jpg" alt="museum"></picture>
+                    </div>
+                  <div class="swiper-slide">
+<picture><source srcset="img/slider/concert.avif" type="image/avif"><source srcset="img/slider/concert.webp" type="image/webp"><img class="swiper-slide__img" src="img/slider/concert.jpg" alt="concert"></picture>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <img class="swiper-button__img" src="img/slider/arrow.svg" alt="arrow">
+                </div>
+                <div class="swiper-button-next">
+                    <img class="swiper-button__img" src="img/slider/arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <button type="submit" class="slider__btn btn btn--brand"> Хочу попробовать </button>
+
+        </div>
+    </div>
+
 
     <!-- подключаем js -->
-    <script src="js/main.js?t=1646999347588"></script>
+    <script src="js/main.js?t=1647025921211"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
     <script  type="text/javascript" src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         (function() {
     $('.form__file"').each(function() {
@@ -248,8 +281,35 @@
 <script>
    $('.single-item').slick();
 </script>
+ <script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+  slidesPerView: 3,
+  spaceBetween: 60,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+
+});
+
+ </script>
 </body>
 
 </html>

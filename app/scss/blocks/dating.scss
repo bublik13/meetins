@@ -17,11 +17,12 @@
 .dating__wrap {
   position: relative;
   padding-top: 5px;
-  height: 244px;
+  height: 256px;
 }
 .dating__wrap--height {
   padding-top: 48px;
   padding-bottom: 31px;
+  height: 284px;
 }
 .dating__title-circl {
   position: relative;
@@ -46,8 +47,21 @@
   right: 0;
 }
 .dating__img {
+  position: relative;
   display: block;
   width: 100%;
   height: 365px;
   border-radius: 36px 0px 0px 36px;
+}
+.dating__wrap-img::after {
+  position: absolute;
+  content: " ";
+  top: 12px;
+  right: 0px;
+  left: -30px;
+  bottom: 0;
+  width: 825px;
+  height: 400px;
+  background: url(../img/dating/shadow.png) bottom center/cover no-repeat;
+  z-index: -1;
 }
