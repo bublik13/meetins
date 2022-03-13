@@ -52,6 +52,7 @@
   width: 100%;
   height: 365px;
   border-radius: 36px 0px 0px 36px;
+  z-index: 2;
 }
 .dating__wrap-img::after {
   position: absolute;
@@ -63,5 +64,5 @@
   width: 731px;
   height: 400px;
   background: url(../img/dating/shadow.png) bottom center/cover no-repeat;
-  z-index: -1;
+  z-index: 1;
 }

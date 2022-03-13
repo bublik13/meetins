@@ -13,13 +13,21 @@
   transition: transform 0.2s ease;
   transform: translateX(calc((-100% - 20px) * var(--step)));
 }
-
 .box__item--height {
   height: 600px;
 }
 .box__title {
   max-width: 296px;
   margin-bottom: 20px;
+}
+.box__arrow {
+  width: 14px;
+  height: 10px;
+  display: block;
+}
+.box__text {
+  display: block;
+  padding: 10px;
 }
 .box__title--width {
   min-width: 515px;
@@ -53,12 +61,11 @@
 .slick-slider {
   position: relative;
   width: 40%;
-
 } /* Слайдер запущен */
 .slick-list {
   overflow: hidden;
-//   width: 1505px;
-//   margin: 0 auto;
+  //   width: 1505px;
+  //   margin: 0 auto;
 } /* Лента слайдов */
 .slick-track {
   display: flex;

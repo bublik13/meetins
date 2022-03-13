@@ -21,25 +21,6 @@
   border: 2px solid #d4e8fc;
   background-color: #f9fbfc;
 }
-
-// .check-pseudo:after {
-//   content: " ";
-//   border-radius: 50%;
-//   width: 20px;
-//   height: 20px;
-//   background-color: transparent;
-//   opacity: 0;
-//   transform: scale(0);
-//   transition: opacity 0.2s, transform 0.2s ease;
-// }
-// .check-pseudo-img:after {
-//   content: " ";
-//   width: 24px;
-//   height: 17px;
-//   opacity: 0;
-//   transform: scale(0);
-//   transition: opacity 0.2s, transform 0.2s ease;
-// }
 .check:checked ~ .check-pseudo:after {
   opacity: 1;
   transform: scale(1);
@@ -47,10 +28,3 @@
 .check:focus ~ .check-pseudo {
   background-color: #ffe55c;
 }
-// .check:checked ~ .check-pseudo-img:after {
-//   opacity: 1;
-//   transform: scale(1);
-// }
-// .check:focus ~ .check-pseudo-img {
-//   background-color: red;
-// }
