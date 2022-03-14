@@ -6,3 +6,7 @@
   @include font(24px, 33px, 400, $second-family);
   color: #707070;
 }
+.subtitle--white {
+  @include font(24px, 33px, 600, $second-family);
+  color: #ffffff;
+}

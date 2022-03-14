@@ -1,0 +1,29 @@
+/* Слайдер запущен */
+.slick-slider {
+  position: relative;
+  width: 40%;
+} /* Слайдер запущен */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  width: 120px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 50%;
+  font-size: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  z-index: -1;
+}
+.slick-arrow.slick-prev {
+  right: 0;
+  border: none;
+  z-index: 0;
+}

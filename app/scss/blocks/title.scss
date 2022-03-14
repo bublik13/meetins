@@ -10,7 +10,11 @@
   @include font(36px, 49px, 900, $second-family);
   color: #51a2f2;
 }
-.title--blue{
-    @include font(36px, 42px, 900, $second-family);
-    color: #51a2f2;
+.title--blue {
+  @include font(36px, 42px, 900, $second-family);
+  color: #51a2f2;
+}
+.title--white-xs {
+  @include font(36px, 49px, 900, $second-family);
+  color: #ffffff;
 }

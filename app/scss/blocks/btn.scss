@@ -11,6 +11,15 @@
   box-shadow: 0px 6px 14px rgba(255, 229, 92, 0.56);
   border-radius: 31px;
   border: none;
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(112, 112, 112, 0.05),
+        rgba(112, 112, 112, 0.05)
+      ),
+      #ffe55c;
+    box-shadow: 0px 4px 11px rgba(255, 229, 92, 0.56);
+  }
 }
 .btn--transporant {
   @include font(13px, 17px, 400, $second-family);
@@ -19,14 +28,9 @@
   display: flex;
   align-items: center;
   background-color: transparent;
-}
-.btn__arrow {
-  width: 14px;
-  height: 10px;
-  display: block;
-}
-.btn__text {
-  padding: 10px;
+  &:hover {
+    background-color: transparent;
+  }
 }
 .btn-tertiary {
   width: 178px;
@@ -36,22 +40,4 @@
   border: 2px solid #d4e8fc;
   box-shadow: none;
   padding: 58px 39px;
-}
-.btn__wrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.btn__arrowup {
-  display: block;
-  margin-right: 5px;
-}
-.btn__text-up {
-  @include font(16px, 22px, 700, $second-family);
-  color: #707070;
-}
-.btn__subtitle {
-  @include font(13px, 14px, 400, $second-family);
-  color: #707070;
-  max-width: 105px;
 }
