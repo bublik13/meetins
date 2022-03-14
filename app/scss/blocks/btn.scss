@@ -11,6 +11,15 @@
   box-shadow: 0px 6px 14px rgba(255, 229, 92, 0.56);
   border-radius: 31px;
   border: none;
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(112, 112, 112, 0.05),
+        rgba(112, 112, 112, 0.05)
+      ),
+      #ffe55c;
+    box-shadow: 0px 4px 11px rgba(255, 229, 92, 0.56);
+  }
 }
 .btn--transporant {
   @include font(13px, 17px, 400, $second-family);
@@ -19,6 +28,9 @@
   display: flex;
   align-items: center;
   background-color: transparent;
+  &:hover {
+    background-color: transparent;
+  }
 }
 .btn-tertiary {
   width: 178px;

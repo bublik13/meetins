@@ -103,21 +103,21 @@
   -moz-osx-font-smoothing: grayscale;
   border-radius: 50%;
 }
-.slider-text__btn{
-    position: relative;
-    width: 240px;
-   
-    text-align: end;
+.slider-text__btn {
+  position: relative;
+  width: 240px;
+
+  text-align: end;
 }
-.slider-text__btn::after{
-    position: absolute;
-    content:' ';
-    top: 16px;
-    right: 0;
-    left: 25px;
-    bottom: 0;
-    height: 26px;
-    width: 26px;
-    z-index: 1;
-    background:url(../img/slider-text/pluse.svg) center center/cover no-repeat;
+.slider-text__btn::after {
+  position: absolute;
+  content: " ";
+  top: 16px;
+  right: 0;
+  left: 25px;
+  bottom: 0;
+  height: 26px;
+  width: 26px;
+  z-index: 1;
+  background: url(../img/slider-text/pluse.svg) center center/cover no-repeat;
 }
