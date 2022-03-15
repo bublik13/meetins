@@ -4,7 +4,7 @@
   vertical-align: top;
   color: #707070;
   @include font(19px, 26px, 800, $second-family);
-  transition: opacity 0.2s;
+  transition: transform .1s ease-in;
   z-index: 1;
   padding: 17px 20px 21px 17px;
   background-color: #ffe55c;
