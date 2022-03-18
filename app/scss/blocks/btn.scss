@@ -4,13 +4,13 @@
   vertical-align: top;
   color: #707070;
   @include font(19px, 26px, 800, $second-family);
-  transition: transform 0.1s ease-in;
   z-index: 1;
   padding: 17px 20px 21px 17px;
   background-color: #ffe55c;
   box-shadow: 0px 6px 14px rgba(255, 229, 92, 0.56);
   border-radius: 31px;
   border: none;
+  transition: transform .9s;
   &:hover {
     background: linear-gradient(
         0deg,
@@ -28,8 +28,11 @@
   display: flex;
   align-items: center;
   background-color: transparent;
+  width: 100px;
   &:hover {
     background-color: transparent;
+    background: transparent;
+    box-shadow: 0 0 0;
   }
 }
 .btn-tertiary {
