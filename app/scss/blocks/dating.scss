@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 117px;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
 }
 .dating__title {
   position: absolute;

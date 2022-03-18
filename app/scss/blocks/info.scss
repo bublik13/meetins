@@ -16,8 +16,12 @@
   align-items: center;
   padding-top: 90px;
   padding-bottom: 150px;
-  padding-left: 91px;
-  padding-right: 152px;
+  padding-left: 90px;
+  padding-right: 120px;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 .info__container-bottom {
   display: flex;
@@ -29,6 +33,10 @@
   margin-bottom: 300px;
   padding-right: 128px;
   padding-left: 57px;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 .info__wrap-img-bottom {
   position: absolute;

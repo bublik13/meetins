@@ -39,6 +39,10 @@
   padding-bottom: 72px;
   position: relative;
   z-index: 1;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__title {
   max-width: 601px;
@@ -74,6 +78,10 @@
   padding-bottom: 76px;
   padding-left: 115px;
   padding-right: 128px;
+  min-width: $container-min-width;
+  max-width: $container-max-width;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__logo {
   margin-right: 46px;
