@@ -1,10 +1,13 @@
 /* Слайдер запущен */
 .slick-slider {
   position: relative;
+} 
+.slick-slider--width {
   width: 50%;
 } /* Слайдер запущен */
 .slick-list {
   overflow: hidden;
+  background-color: #f9fbfc;
 }
 /* Лента слайдов */
 .slick-track {

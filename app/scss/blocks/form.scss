@@ -17,6 +17,7 @@
 }
 .form__wrap-marker {
   position: relative;
+  width: 100%;
 }
 .form__title {
   @include font(18px, 20px, 600, $second-family);
@@ -36,20 +37,20 @@
   border-radius: 33px;
 }
 .form__input--marker {
-  width: 477px;
+  width: 457px;
   border-radius: 33px;
   padding: 18px 40px 18px 20px;
   margin-bottom: 25px;
 }
 .form__input--password-new {
-  width: 477px;
+  width: 457px;
   border-radius: 33px;
   margin-bottom: 10px;
 }
 .form__marker {
   position: absolute;
   top: 20px;
-  right: 11px;
+  right: 20px;
 }
 .form__btn {
   margin-left: -28px;
@@ -134,7 +135,7 @@
   color: #707070;
 }
 .form__select-flex {
-  margin-left: 56px;
+  margin-left: 47px;
 }
 .form__btn-big {
   margin-bottom: 25px;
@@ -197,5 +198,5 @@
   margin-bottom: 35px;
 }
 .form__btn-file {
-  width: 100%;
+  width: 98%;
 }

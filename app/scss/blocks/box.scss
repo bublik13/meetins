@@ -1,8 +1,9 @@
 .box {
   display: flex;
   gap: 20px;
-  width: 600px;
+  max-width: 460px;
   overflow: hidden;
+  background-color: #f9fbfc;
 }
 .box__item {
   position: relative;
@@ -40,6 +41,7 @@
 }
 .box__form {
   margin-bottom: 19px;
+  background-color: #f9fbfc;
 }
 .box__link-account {
   text-align: center;

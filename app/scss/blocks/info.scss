@@ -4,7 +4,7 @@
 }
 .info__title {
   position: absolute;
-  top: 63%;
+  bottom: 51px;
   left: 0;
 }
 .info__bottom {
@@ -22,6 +22,7 @@
   max-width: $container-max-width;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .info__container-bottom {
   display: flex;
@@ -32,7 +33,7 @@
   padding-bottom: 48px;
   margin-bottom: 300px;
   padding-right: 128px;
-  padding-left: 57px;
+  padding-left: 96px;
   min-width: $container-min-width;
   max-width: $container-max-width;
   margin-left: auto;

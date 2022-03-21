@@ -1,6 +1,7 @@
 .dating {
   background-color: #f9fbfc;
   position: relative;
+  padding-bottom: 236px;
 }
 .dating__container {
   padding-top: 90px;
@@ -42,11 +43,13 @@
 }
 .dating__container-bottom {
   display: flex;
+  position: relative;
 }
 .dating__wrap-img {
   position: absolute;
-  top: -34%;
-  right: -230px;
+  top: -42px;
+  right: 0;
+  max-width: 691px;
 }
 .dating__img {
   position: relative;
@@ -67,4 +70,9 @@
   height: 400px;
   background: url(../img/dating/shadow.png) bottom center/cover no-repeat;
   z-index: 1;
+}
+.dating__title-bottom{
+  position: absolute;
+  bottom: -188px;
+  right: 0;
 }
