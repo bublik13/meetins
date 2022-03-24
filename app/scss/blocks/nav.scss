@@ -13,16 +13,42 @@
   display: flex;
   list-style: none;
   align-items: center;
+  @include media($lg) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+  }
 }
 .nav__list--flex {
   align-items: flex-start;
 }
 .nav__item {
-  padding: 5px;
+  padding: 0 0 8px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.nav__item::before{
+  @include media($lg) {
+    position:absolute;
+    content: ' ';
+    bottom:0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(68.42deg, #50F2C4 0%, #26D0E3 39.67%, #757AFF 100%);
+  }
 }
 .nav__link {
   text-decoration: none;
   padding: 20px 8px;
   @include font(18px, 30px, 700, $second-family);
   color: #515151;
+  @include media($lg) {
+    @include font(24px, 30px, 600, $second-family);
+    color: #707070;
+  }
 }

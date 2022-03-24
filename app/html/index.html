@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body js-body">
     <img class="pp"  hidden  src="img/main1.jpg" alt="">
     <style>
       .pp {
@@ -38,10 +38,15 @@
     <header class="header">
         <div class="header__top">
             <div class="header__container">
+                <button type="button" aria-label="close" class="burger header__burger js-burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
                 <a class="header__logo logo" href="#">
                     <img src="img/header/logo.svg" class="logo__img"  alt="logo">
                 </a>
-                <nav class="header__nav nav">
+                <nav class="header__nav nav js-nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__link">Знакомства</a>
@@ -54,8 +59,10 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header__enter">Войти</a>
-                <a href="#" class="header__install">Установить</a>
+                <div class="header__wrap">
+                    <a href="#" class="header__enter">Войти</a>
+                    <a href="#" class="header__install">Установить</a>
+                </div>
             </div>
         </div>
         <div class="header__center">
@@ -444,6 +451,17 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    <script>     
+        const body = document.querySelector('.js-body');
+        const nav = document.querySelector('.js-nav');
+        const burger = document.querySelector('.js-burger');
+
+        burger.addEventListener('click', ()=>{  
+        burger.classList.toggle('burger--active');
+        nav.classList.toggle('header__nav--active');
+        body.classList.toggle('body--lock');
+        });
     </script>
 </body>
 

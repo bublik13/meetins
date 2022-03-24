@@ -28,12 +28,66 @@
   padding-left: 133px;
   padding-right: 228px;
   padding-bottom: 10px;
+  @include media($lg) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  @include media($lg-s) {
+    padding-right: 50px;
+    padding-left: 114px;
+  }
+}
+.header__burger {
+  margin-left: auto;
+  z-index: 3;
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  display: none;
+  transition: transform 1.2s ease;
+  @include media($lg) {
+    display: block;
+    top: 30px;
+    left: 20px;
+  }
 }
 .header__logo {
   margin-right: 46px;
+  z-index: 10;
 }
 .header__nav {
   margin-right: auto;
+  position: static;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  @include media($lg) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f9fbfc;
+    z-index: 2;
+    transition: transform 1.2s ease;
+    transform: translateY(-100%);
+    pointer-events: none;
+    opacity: 0;
+    overflow-y: auto;
+    width: 100%;
+    height: 372px;
+  }
+}
+.header__nav--active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 1.2s ease;
+  padding: 0 20px;
+}
+.header__wrap {
+  display: flex;
+  @include media($sm) {
+    display: none;
+  }
 }
 .header__enter {
   @include font(24px, 30px, 700, $second-family);

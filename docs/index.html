@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css?t=1647874412241"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css?t=1648155827585"/>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css?t=1647874412241">
+    <link rel="stylesheet" href="css/main.css?t=1648155827585">
 </head>
 
-<body>
+<body class="body js-body">
 <picture><source srcset="img/main1.avif" type="image/avif"><source srcset="img/main1.webp" type="image/webp"><img class="pp"  hidden  src="img/main1.jpg" alt=""></picture>
     <style>
       .pp {
@@ -38,10 +38,15 @@
     <header class="header">
         <div class="header__top">
             <div class="header__container">
+                <button type="button" aria-label="close" class="burger header__burger js-burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
                 <a class="header__logo logo" href="#">
                     <img src="img/header/logo.svg" class="logo__img"  alt="logo">
                 </a>
-                <nav class="header__nav nav">
+                <nav class="header__nav nav js-nav">
                     <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__link">Знакомства</a>
@@ -54,8 +59,10 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="header__enter">Войти</a>
-                <a href="#" class="header__install">Установить</a>
+                <div class="header__wrap">
+                    <a href="#" class="header__enter">Войти</a>
+                    <a href="#" class="header__install">Установить</a>
+                </div>
             </div>
         </div>
         <div class="header__center">
@@ -388,7 +395,7 @@
         </div>
     </footer>
     <!-- подключаем js -->
-    <script src="js/main.js?t=1647874412241"></script>
+    <script src="js/main.js?t=1648155827585"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
@@ -444,6 +451,17 @@
     </script>
     <script>
         AOS.init();
+    </script>
+    <script>     
+        const body = document.querySelector('.js-body');
+        const nav = document.querySelector('.js-nav');
+        const burger = document.querySelector('.js-burger');
+
+        burger.addEventListener('click', ()=>{  
+        burger.classList.toggle('burger--active');
+        nav.classList.toggle('header__nav--active');
+        body.classList.toggle('body--lock');
+        });
     </script>
 </body>
 
