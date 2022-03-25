@@ -57,7 +57,16 @@
                         <li class="nav__item">
                             <a href="#" class="nav__link">Возможности</a>
                         </li>
+                        <li class="nav__item nav__item--none">
+                            <a href="#" class="nav__link">Установить</a>
+                        </li>
                     </ul>
+                    <div class="header__social social social--flex js-social">
+                        <div class="social__flex-center">
+                            <a href="#" class="social__wrap-icon"><img src="img/footer/vk.svg" alt="vk"></a>
+                            <a href="#" class="social__wrap-icon"><img src="img/footer/telegram.svg" alt="telegram"></a>
+                        </div>
+                    </div>
                 </nav>
                 <div class="header__wrap">
                     <a href="#" class="header__enter">Войти</a>
@@ -89,7 +98,7 @@
                 </p>
             </div>
             <div style="--step: 0" class="dating__box box js-box single-item">
-                <div class="box__item js-box-item" data-aos="fade-up">
+                <div class="box__item js-box-item box__item--auto" data-aos="fade-up">
                     <h4 class="box__title title title--blue">Войдите, чтобы
                         попробовать
                     </h4>
@@ -110,7 +119,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="box__item ">
+                <div class="box__item box__item--height">
                     <h4 class="box__title title title--blue">Вход в аккаунт 
                         Метинс
                     </h4>
@@ -455,11 +464,13 @@
     <script>     
         const body = document.querySelector('.js-body');
         const nav = document.querySelector('.js-nav');
+        const social = document.querySelector('.js-social');
         const burger = document.querySelector('.js-burger');
 
         burger.addEventListener('click', ()=>{  
         burger.classList.toggle('burger--active');
         nav.classList.toggle('header__nav--active');
+        social.classList.toggle('header__social--active');
         body.classList.toggle('body--lock');
         });
     </script>

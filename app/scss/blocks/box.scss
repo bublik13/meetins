@@ -15,7 +15,10 @@
   transform: translateX(calc((-100% - 20px) * var(--step)));
 }
 .box__item--height {
-  height: 600px;
+  height: 300px;
+}
+.box__item--auto {
+  height: auto;
 }
 .box__title {
   max-width: 296px;

@@ -11,6 +11,10 @@
   padding-bottom: 117px;
   min-width: $container-min-width;
   max-width: $container-max-width;
+  @include media($lg) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .dating__title {
   position: absolute;
@@ -70,7 +74,7 @@
   background: url(../img/dating/shadow.png) bottom center/cover no-repeat;
   z-index: 1;
 }
-.dating__title-bottom{
+.dating__title-bottom {
   position: absolute;
   bottom: -188px;
   right: 0;

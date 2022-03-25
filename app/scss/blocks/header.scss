@@ -17,7 +17,7 @@
 }
 .header__container {
   display: flex;
-  align-items: center;
+  align-items: first baseline;
   position: relative;
   z-index: 2;
   min-width: $container-min-width;
@@ -28,32 +28,50 @@
   padding-left: 133px;
   padding-right: 228px;
   padding-bottom: 10px;
+  height: 98px;
   @include media($lg) {
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: last baseline;
+    padding-left: 128px;
+    padding-right: 128px;
+    justify-content: flex-end;
   }
   @include media($lg-s) {
     padding-right: 50px;
-    padding-left: 114px;
+    padding-left: 50px;
+  }
+  @include media($md) {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 .header__burger {
   margin-left: auto;
   z-index: 3;
   position: absolute;
-  top: 19px;
-  left: 19px;
+  top: 61px;
+  left: 130px;
   display: none;
   transition: transform 1.2s ease;
   @include media($lg) {
     display: block;
-    top: 30px;
+  }
+  @include media($lg-s) {
+    left: 50px;
+  }
+  @include media($md) {
     left: 20px;
   }
 }
 .header__logo {
   margin-right: 46px;
   z-index: 10;
+  @include media($lg) {
+    margin-right: 0;
+    position: absolute;
+    top: 47px;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 .header__nav {
   margin-right: auto;
@@ -81,13 +99,19 @@
   opacity: 1;
   pointer-events: auto;
   transition: transform 1.2s ease;
-  padding: 0 20px;
+  padding: 0 130px;
+  @include media($lg-s) {
+    padding: 0 62px 0 50px;
+  }
+}
+.header__social {
+  display: none;
+}
+.header__social--active {
+  display: block;
 }
 .header__wrap {
   display: flex;
-  @include media($sm) {
-    display: none;
-  }
 }
 .header__enter {
   @include font(24px, 30px, 700, $second-family);
@@ -95,12 +119,21 @@
   display: block;
   text-decoration: none;
   margin-right: 31px;
+  @include media($md) {
+    margin-right: 0;
+  }
+  @include media($xs) {
+    display: none;
+  }
 }
 .header__install {
   @include font(24px, 30px, 700, $second-family);
   color: #51a2f2;
   display: block;
   text-decoration: none;
+  @include media($md) {
+    display: none;
+  }
 }
 .header__center {
   position: relative;
@@ -115,17 +148,26 @@
   bottom: 0;
   width: 100%;
   height: auto;
+  @include media($sm) {
+    background: url(../img/header/bg.jpg) left 10% center/cover no-repeat;
+    top: 0;
+  }
 }
 .header__container-center {
   padding: 200px 0 197px;
   position: relative;
   z-index: 1;
+  @include media($sm) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .header__title {
   max-width: 601px;
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 }
 .header__subtitle {
   @include font(36px, 33px, 400, $second-family);
   color: #ffffff;
+  display: none;
 }

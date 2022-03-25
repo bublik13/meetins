@@ -1,6 +1,9 @@
 .title {
   @include font(64px, 59px, 900, $second-family);
   color: #ffffff;
+  @include media($sm) {
+    @include font(32px, 30px, 900, $second-family);
+  }
 }
 .title--big {
   @include font(144px, 30px, 900, $second-family);
