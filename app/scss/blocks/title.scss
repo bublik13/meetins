@@ -12,10 +12,17 @@
 .title--blue-xs {
   @include font(36px, 49px, 900, $second-family);
   color: #51a2f2;
+  @include media($sm) {
+    @include font(23px, 25px, 800, $second-family);
+    text-shadow: 0px 0px 7px #ffffff;
+  }
 }
 .title--blue {
   @include font(36px, 42px, 900, $second-family);
   color: #51a2f2;
+  @include media($sm) {
+    @include font(23px, 23px, 800, $second-family);
+  }
 }
 .title--white-xs {
   @include font(36px, 49px, 900, $second-family);

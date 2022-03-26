@@ -2,6 +2,9 @@
   background-color: #f9fbfc;
   position: relative;
   padding-bottom: 236px;
+  @include media($lg) {
+    padding-bottom: 45px;
+  }
 }
 .dating__container {
   padding-top: 90px;
@@ -9,31 +12,54 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 117px;
-  min-width: $container-min-width;
-  max-width: $container-max-width;
   @include media($lg) {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  @include media($sm) {
+    padding-top: 24px;
+    padding-bottom: 20px;
   }
 }
 .dating__title {
   position: absolute;
   bottom: 50px;
   left: 0;
+  @include media($lg) {
+    display: none;
+  }
 }
 .dating__wrap {
   position: relative;
   height: 256px;
+  @include media($sm) {
+    height: 120px;
+  }
 }
 .dating__wrap--height {
   padding-top: 48px;
   padding-bottom: 31px;
   height: 284px;
+  @include media($sm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 .dating__title-circl {
   position: relative;
   z-index: 1;
   margin-bottom: 9px;
+}
+.dating__title-none {
+  @include media($sm) {
+    display: none;
+  }
+}
+.dating__title-circl-bottom {
+  @include media($sm) {
+    margin-bottom: 205px;
+    text-align: center;
+  }
 }
 .dating__subtitle {
   max-width: 465px;
@@ -43,16 +69,36 @@
 }
 .dating__bottom {
   background: rgba(81, 162, 242, 0.1);
+  @include media($sm) {
+    background-color: transparent;
+  }
 }
 .dating__container-bottom {
   display: flex;
   position: relative;
+  @include media($lg) {
+    flex-direction: column-reverse;
+    align-items: center;
+    @include media($sm) {
+      justify-content: flex-end;
+    }
+  }
 }
 .dating__wrap-img {
   position: absolute;
   top: -42px;
   right: 0;
   max-width: 691px;
+  @include media($lg) {
+    position: relative;
+    top: 30px;
+    right: none;
+    width: 100%;
+  }
+  @include media($sm) {
+    position: absolute;
+    top: 40px;
+  }
 }
 .dating__img {
   position: relative;
@@ -61,6 +107,12 @@
   height: 365px;
   border-radius: 36px 0px 0px 36px;
   z-index: 2;
+  @include media($lg) {
+    border-radius: 0;
+  }
+  @include media($sm) {
+    height: 179px;
+  }
 }
 .dating__wrap-img::after {
   position: absolute;
@@ -73,6 +125,14 @@
   height: 400px;
   background: url(../img/dating/shadow.png) bottom center/cover no-repeat;
   z-index: 1;
+  @include media($lg) {
+    width: 100%;
+  }
+  @include media($sm) {
+    top: 0;
+    width: 100%;
+    height: 200px;
+  }
 }
 .dating__title-bottom {
   position: absolute;

@@ -4,6 +4,9 @@
   max-width: 460px;
   overflow: hidden;
   background-color: #f9fbfc;
+  @include media($sm) {
+    width: 100%;
+  }
 }
 .box__item {
   position: relative;
@@ -15,14 +18,17 @@
   transform: translateX(calc((-100% - 20px) * var(--step)));
 }
 .box__item--height {
-  height: 300px;
-}
-.box__item--auto {
-  height: auto;
+  height: 600px;
+  @include media($sm) {
+    height: 500px;
+  }
 }
 .box__title {
   max-width: 296px;
   margin-bottom: 20px;
+  @include media($sm) {
+    margin-bottom: 16px;
+  }
 }
 .box__arrow {
   width: 14px;
@@ -33,24 +39,45 @@
   display: block;
   padding: 10px;
 }
+.box__title--bottom {
+  @include media($sm) {
+    margin-bottom: 0;
+  }
+}
 .box__title--width {
   min-width: 515px;
   margin-bottom: 0;
+  @include media($sm) {
+    width: 100%;
+    margin-bottom: 6px;
+  }
 }
 .box__subtitle {
   @include font(24px, 25px, 600, $second-family);
   color: #707070;
   margin-bottom: 35px;
+  @include media($sm) {
+    @include font(16px, 18px, 600, $second-family);
+    margin-bottom: 23px;
+  }
 }
 .box__form {
   margin-bottom: 19px;
   background-color: #f9fbfc;
+  @include media($sm) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .box__link-account {
   text-align: center;
   text-decoration: none;
   @include font(18px, 20px, 600, $second-family);
   color: #707070;
+  @include media($sm) {
+    @include font(13px, 18px, 400, $second-family);
+
+  }
 }
 .box__link-password {
   text-align: start;
@@ -59,4 +86,9 @@
   color: #707070;
   margin-left: 13px;
   padding: 10px;
+  display: block;
+  @include media($sm) {
+    text-align: center;
+    margin-left: 0;
+  }
 }

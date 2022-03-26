@@ -20,6 +20,9 @@
   border-radius: 32px;
   border: 2px solid #d4e8fc;
   background-color: #f9fbfc;
+  @include media($sm) {
+    width: 150px;
+  }
 }
 .check:checked ~ .check-pseudo:after {
   opacity: 1;

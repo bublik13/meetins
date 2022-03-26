@@ -7,10 +7,10 @@
   z-index: 1;
   padding: 17px 20px 21px 17px;
   background-color: #ffe55c;
-  box-shadow: 0px 6px 14px rgba(255, 229, 92, 0.56);
+  box-shadow: 0px 6px 7px rgba(255, 229, 92, 0.56);
   border-radius: 31px;
   border: none;
-  transition: transform .9s;
+  transition: transform 0.9s;
   &:hover {
     background: linear-gradient(
         0deg,
@@ -18,7 +18,11 @@
         rgba(112, 112, 112, 0.05)
       ),
       #ffe55c;
-    box-shadow: 0px 4px 11px rgba(255, 229, 92, 0.56);
+    box-shadow: 0px 4px 7px rgba(255, 229, 92, 0.56);
+  }
+  @include media($sm) {
+    padding: 9px;
+    @include font(16px, 22px, 700, $second-family);
   }
 }
 .btn--transporant {
@@ -43,4 +47,9 @@
   border: 2px solid #d4e8fc;
   box-shadow: none;
   padding: 58px 39px;
+  @include media($sm) {
+    width: 100px;
+    height: 100px;
+    padding: 20px 26px;
+  }
 }
